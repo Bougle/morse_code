@@ -35,6 +35,10 @@ use std::error::Error;
 use std::path::PathBuf;
 
 /// Main library function that does the actual work.
+///
+/// Each character has one space between them and there are two spaces between words.
+/// Unknown characters in the input are replaced with a '#' in the output.
+///
 pub fn run(config: &mut Config) -> Result<(), Box<dyn Error>> {
     let mut contents = String::new();
     config.read.read_to_string(&mut contents)?;
