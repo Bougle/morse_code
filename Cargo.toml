@@ -1,0 +1,10 @@
+[package]
+name = "morse_code"
+description = "Simple morse code text encoder written in rust"
+license = "MIT"
+version = "0.0.1"
+authors = ["Michael Cummings <dragonrun1@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+structopt = "0.2.18"
